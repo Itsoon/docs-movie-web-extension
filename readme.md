@@ -67,8 +67,32 @@ Click on load unpacked and enter the path to the build folder.
 
 ### Firefox
 
+Install web-ext :
+
+```shell
+npm install -g web-ext
+```
+
+Goto build path
+
+```shell
+web-ext build
+```
+create a zip file in `web-ext-artifacts/`
+
+### Temporary method
+
 Goto `about:debugging#/runtime/this-firefox`
 
 ![firefox](./.assets/firefox.png)
 
-And load temporary addon
+And load temporary addon (zip file)
+
+### Permanent method
+
+> Install another version of firefox (tested on firefox dev edition) :
+
+Unsigned extensions can be installed in the Developer Edition, Nightly, and ESR versions of Firefox, after toggling the `xpinstall.signatures.required` preference in `about:config`.
+
+In `about:addons` install addon from file (zip file) :
+![firefox dev](./.assets/firefox_dev.png)
