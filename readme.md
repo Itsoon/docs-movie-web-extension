@@ -1,5 +1,8 @@
 # movie-web extension
 
+> [!IMPORTANT]  
+> don't trust anyone: installing an extension that isn't signed by a trusted third party can access your private data.
+
 ## Installation
 
 Cloning :
